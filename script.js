@@ -7,7 +7,8 @@
 
 // This line adds an event listener to the 'load' event of the window.
 window.addEventListener("load", () => {
-  
+
+
     const loader = document.querySelector(".loader");
     loader.classList.add("loader--hidden");
     loader.addEventListener("transitionend", () => {
@@ -15,4 +16,7 @@ window.addEventListener("load", () => {
     });
     
   });
+
+
+
   

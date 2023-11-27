@@ -1,3 +1,5 @@
+/* loader is the loading screen, hides and removes itself once the wesbite is done loading */
+
 .loader {
     width: 100%;
     height: 100%;
@@ -13,22 +15,44 @@
     transition: opacity 0.75s, visibility 0.75s;
 }
 
-.content{
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.content {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: url('assets/landingpage.gif') center center no-repeat;
     background-size: cover;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    /* for scrollability */
+    overflow: auto; 
 }
 
-.loader--hidden {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
+.glass { 
+    width: 966px;
+    height: 545px;
+    margin-bottom: 50px;
+    border-radius: 17px;
+    background: rgba(255, 255, 255);
+    mix-blend-mode: soft-light;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.514);
+    flex-shrink: 0;   
+}
+
+.footer {
+    margin-top: 150px;
+    width: 966px;
+    height: 100px;
+    border-radius: 17px;
+    background: rgba(255, 255, 255);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
