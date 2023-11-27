@@ -3,26 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Gallery</title>
+    <title>souviens-toi</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&display=swap" rel="stylesheet">
+    <link href="cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="loader">
-
-    </div>
-    
     <main class = "content">
-        <div class = "splash">
-
-        </div>
         <div id = "player" class="glass">
+            <div class = "box" data-src = 'assets/Subwoofer Lullaby.mp3'>
+                <div class = "image1">
+                    <div class = "play">
+                    </div>
+                </div>
+                <div class = "details">
+                    <h3>Subwoofer Lullaby</h3>
+                    <p>C418</p>
+                </div>
+            </div>
 
+            <div class = "box" data-src = 'assets/Wet Hands.mp3'>
+                <div class = "image2">
+                    <div class = "play">
+                    </div>
+                </div>
+                <div class = "details">
+                    <h3>Wet Hands</h3>
+                    <p>C418</p>
+                </div>
+            </div>
+
+            <div class = "box" data-src = 'assets/Key.mp3'>
+                <div class = "image3">
+                    <div class = "play">
+                    </div>
+                </div>
+                <div class = "details">
+                    <h3>Key</h3>
+                    <p>C418</p>
+                </div>
+            </div>
         </div>
         <footer id = "footer" class = "footer">
+            <p class = "foottitle">Listen to the full playlist on Spotify<p>
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6DJVEZkTkYG8SZS9z9sMxh?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </footer>
     </main>
-    
-    <script src="script.js"></script>
+
 </body>
 </html>
