@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Wait for the document to be fully loaded
+    
   const boxes = document.querySelectorAll('.box');
   let currentAudio = null;
 

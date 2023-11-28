@@ -33,6 +33,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    backdrop-filter: blur(2px);
 }
 
 .foottitle {
@@ -92,6 +93,24 @@
 
 .details {
     font-family: 'DM Sans', sans-serif;
+    color: 1f1f1f;
     font-size: 30px;
     padding: 10px;
+}
+
+
+.about {
+    width: 966px;
+    height: 545px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border-radius: 17px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.514);
+    flex-shrink: 0;   
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
 }
